@@ -1,0 +1,1 @@
+web: vendor/bin/heroku-php-apcleache2 public/
