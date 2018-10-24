@@ -1,25 +1,18 @@
 <!doctype html>
-<html>
-<head>
+<html lang="en">
     @include('includes.head')
-</head>
-<body>
-<div class="container">
-
-    <header class="row">
-        @include('includes.header')
-    </header>
-
-    <div id="main" class="row">
-
-        @yield('content')
-
-    </div>
-
-    <footer class="row">
-        @include('includes.footer')
-    </footer>
-
-</div>
-</body>
+    <body>
+        <div class="container">
+            <header>
+                @include('includes.menu')
+            </header>
+            <main role="main">
+                @yield('content')
+            </main>
+            <footer>
+                @include('includes.jsfooter')
+                @include('includes.footer')
+            </footer>
+        </div>
+    </body>
 </html>
